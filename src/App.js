@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Character from "./components/Character";
+import "./App.css";
 
 class App extends Component {
   state = {};

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Name extends Component {
   render() {
-    return <p>{this.props.name}</p>;
+    return <p className="name">{this.props.name}</p>;
   }
 }
 

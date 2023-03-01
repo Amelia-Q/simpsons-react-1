@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 
 class Image extends Component {
-  state = {};
   render() {
-    return <p>{this.props.image}</p>;
+    return <img className="image" src={this.props.image} />;
   }
 }
 
