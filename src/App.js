@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     console.log(this.state);
 
-    const simpsons = { simpsons };
+    const { simpsons } = this.state;
 
     if (!simpsons) {
       return <h1>Waiting for data....</h1>;
