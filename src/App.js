@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Character from "./components/Character";
 
 class App extends Component {
   state = {};
@@ -15,10 +16,22 @@ class App extends Component {
   render() {
     console.log(this.state);
 
+    const simpsons = { simpsons };
+
+    if (!simpsons) {
+      return <h1>Waiting for data....</h1>;
+    }
+
     //if data is here, loop over the data
     //think defensive check
 
-    return <h1>Waiting for data....</h1>;
+    return (
+      <>
+        {this.state.simpsons.map((item) => {
+          return <Character item={item} />;
+        })}
+      </>
+    );
   }
 }
 
